@@ -98,6 +98,8 @@ nav{
     display: flex;
     justify-content: space-between;
     border: 1px solid white;
+    background-color: rgba(83, 84, 86, .5);
+    backdrop-filter: blur(2px);
     border-radius: 1.5rem;
     width: 700px;
     padding: 1rem 1rem;
@@ -109,9 +111,6 @@ nav .nav-point{
     padding: 0;
     text-decoration: none;
     color: inherit;
-}
-nav .nav-point:hover{
-    background-color: #EE3F32;
 }
 
 #waves{
@@ -141,7 +140,7 @@ nav .nav-point:hover{
     border-radius: 30px;
     text-align: center;
     padding: 1rem 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -191,9 +190,49 @@ nav .nav-point:hover{
     }
 }
 
+.service{
+    margin-top: 40rem;
+}
+h1{
+    margin: 3rem 0;
+    color: #EE3F32;
+    font-family: "CraftworkGrotesk-Semibold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+}
+.service-products{
+    display: flex;
+    gap: 2rem;
+}
+.product img{
+    position: relative; 
+    max-height: 50rem;
+}
 
 
-   
+#instrumental{
+
+}
+#vocal{
+
+}
+
+.phone-number-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-number-block input {
+    background-color: rgba(192, 192, 192, .1);
+    border: 1px solid white;
+    border-radius: 2rem;
+}
+
+.phone-number-block button{
+    background-color: rgba(83, 84, 86, .5);
+    backdrop-filter: blur(2px);
+}
 
 
 
@@ -201,8 +240,7 @@ nav .nav-point:hover{
 
 
 
-
-
+/* 
 
 .services{
     margin-top: 35%;
@@ -251,10 +289,10 @@ h1{
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
-      position: absolute; /* Устанавливаем абсолютное позиционирование */
-    top: 0; /* Располагаем блок относительно верхнего края родительского элемента */
-    left: 0; /* Располагаем блок относительно левого края родительского элемента */
-    z-index: 1; /* Устанавливаем z-index, чтобы элемент находился поверх изображения */
+      position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 1;
 }
 
 .service-product-description-price big{
@@ -316,7 +354,7 @@ h1{
     width: 800px;
     border: 1px solid white;
     border-radius: 30px;
-    padding-left: 38px; /* Выравнивание текста от края */
+    padding-left: 38px; 
 }
 
 .phone-number-block button{
@@ -355,7 +393,7 @@ h1{
 
 .about p {
     font-size: 24px;
-    margin-top: 0px; /* Расстояние от изображения */
+    margin-top: 0px; 
 }
 
 
@@ -405,3 +443,4 @@ footer{
     justify-content: space-between;
     margin-top: -20%;
 }
+*/
