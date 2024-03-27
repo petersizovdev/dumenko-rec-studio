@@ -30,7 +30,9 @@
     src: url("fonts/CraftworkGrotesk-SemiBold.ttf");
   }
   
-
+  html {
+    scroll-behavior: smooth;
+}
   
 *{
     font-family: "CraftworkGrotesk-Regular";
