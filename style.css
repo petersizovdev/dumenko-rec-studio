@@ -416,5 +416,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 400;
 
 }
