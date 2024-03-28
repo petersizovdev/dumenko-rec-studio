@@ -71,10 +71,17 @@ html{
     font-family: "CraftworkGrotesk-Regular";
     font-size: 16px;
     color: white;
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 body{
     background-color: #121212;
     
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
    
 }
 body::-webkit-scrollbar {
@@ -85,8 +92,6 @@ body::-webkit-scrollbar {
     max-width: 1440px;
     margin: 3rem auto;
     padding: 0 2rem;
-    overflow: hidden;
-    position: relative;
 }
 
 header{
@@ -119,9 +124,8 @@ nav .nav-point{
 
 #waves{
     width: 100%;
-    scale: 1.25;
-    position: absolute;
-    top: 25rem;
+    scale: 180%;
+    margin-top: -8rem;
 }
 
 .main-logo-content{
@@ -155,7 +159,7 @@ nav .nav-point{
     width: 100%;
 }
 #serviceh1{
-    margin: 40rem 0 0 0;
+    margin-top: 8rem;
     color: #EE3F32;
     font-family: "CraftworkGrotesk-Semibold";
     font-style: normal;
@@ -398,6 +402,9 @@ iframe{
         display: flex;
         width: 100%; 
         margin-top: 3rem;
+    }
+    #waves{
+        margin-top: 0rem;
     }
 }
 @media (max-width: 375px)  {
