@@ -97,17 +97,18 @@ body::-webkit-scrollbar {
     padding: 0 2rem;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-
 }
-#logo{
+
+#logo {
     height: 4.5rem;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     border: 1px solid white;
@@ -117,14 +118,39 @@ nav{
     width: 700px;
     padding: 1rem 1rem;
 }
-nav .nav-point{
+
+nav .nav-point {
     white-space: nowrap;
     font-size: 1rem;
     text-decoration: none;
     padding: 0;
     text-decoration: none;
     color: inherit;
+    position: relative;
+    transition: color 0.3s;
+}
 
+nav .nav-point:hover {
+    color: #EE3F32; /* Измените цвет при наведении на ссылку */
+}
+
+nav .nav-point::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #EE3F32; /* Цвет подчеркивания */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: -5px;
+}
+
+nav .nav-point:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 #waves{
