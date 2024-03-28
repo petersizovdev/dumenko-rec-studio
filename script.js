@@ -19,6 +19,48 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const openModalBtn = document.getElementById("open1");
+    const closeModalBtn = document.getElementById("close");
+    const modal = document.getElementById("Modal");
+
+    openModalBtn.addEventListener("click", function () {
+        modal.style.display = "block";
+    });
+
+    closeModalBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const openModalBtn = document.getElementById("open2");
+    const modal = document.getElementById("Modal");
+
+    openModalBtn.addEventListener("click", function () {
+        modal.style.display = "block";
+    });
+
+    modal.addEventListener("click", function (event) {
+        if (event.target.id === "close") {
+            modal.style.display = "none";
+        }
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
 
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Dumenko</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,11 +27,14 @@
 
 <div class="main-logo-content">
     <img id="main-label" src="svg/main-label.svg" alt="Название">
-    <button class="send-app-btn">Оставить заявку</button>
+    <button class="send-app-btn" id="open2">Оставить заявку</button>
 </div>
-<img id="waves" src="svg/waves.svg" alt="Волны">
 
+<img id="waves" src="./svg/waves.svg" alt="">
 </div>
+ 
+
+
 <div class="wrapper">
 <h1 id="serviceh1">Стоимость услуг</h1>
 
@@ -78,9 +82,13 @@
         </div>
     </div>
 
-    <div class="phone-number-block">
-        <input type="text" placeholder="Напиши свой номер и мы перезвоним!">
-        <button type="submit" class="send-app-btn">Оставить заявку</button>
+
+    </form>
+        <form class="phone-number-block" action="https://formspree.io/f/mgegnyea" method="POST">
+            <input name="Телефон" type="text" placeholder="Напиши свой номер и мы перезвоним!" required>
+            <button type="submit" class="send-app-btn">Оставить заявку</button>
+        </form>
+    
     </div>
 </section>
 <div class="wrapper">
@@ -137,7 +145,7 @@
             <p>Мы — студия полного <br> музыкального продакшена.<br> Реализуем любую задачу<br> от записи песни до съемки клипа.<br><br>Поработай на уникальном <br>оборудовании с видом<br> на весь город.<br><br>Будь ты вокалистом,<br> рэпером или продюсером,<br> мы предоставим всё<br> необходимое, чтобы <br>воплотить твои идеи в<br> жизнь.</p>
         </div>
 
-        <button class="send-app-btn" onclick="sendApplication()">Оставить заявку</button>
+        <button class="send-app-btn" id="open1">Оставить заявку</button>
 
     </section>
 
@@ -167,27 +175,18 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
 <div class="modal" id="Modal">
     <span class="close" id="close">&times;</span>
     <div class="modal-h">
         <h1>Хочешь поработать с нами?</h1>
         <p>Напиши свой номер и мы перезвоним!</p>
     </div> 
-    <div class="data">
-        <input type="text" placeholder="Имя">
-        <input type="text" placeholder="Телефон">
-        <button class="send-app-btn" >Оставить заявку</button>
-    </div>
+
+        <form class="data" action="https://formspree.io/f/mgegnyea" method="POST">
+            <input name="Имя" type="text" placeholder="Имя" required>
+            <input name="Телефон" placeholder="Телефон" required>
+        <button type="submit" class="send-app-btn" >Оставить заявку</button>
+        </form>
     
 </div>
 
