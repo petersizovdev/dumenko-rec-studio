@@ -137,7 +137,7 @@
             <p>Мы — студия полного <br> музыкального продакшена.<br> Реализуем любую задачу<br> от записи песни до съемки клипа.<br><br>Поработай на уникальном <br>оборудовании с видом<br> на весь город.<br><br>Будь ты вокалистом,<br> рэпером или продюсером,<br> мы предоставим всё<br> необходимое, чтобы <br>воплотить твои идеи в<br> жизнь.</p>
         </div>
 
-        <button class="send-app-btn">Оставить заявку</button>
+        <button class="send-app-btn" onclick="sendApplication()">Оставить заявку</button>
 
     </section>
 
@@ -149,7 +149,7 @@
             <h1>Контакты</h1>
             <p>Санкт-Петербург <br> м.Беговая</p>
             <p>+7 (888) 000-00- 00</p>
-            <button class="send-app-btn">Оставить заявку</button>
+            <button class="send-app-btn" id="open">Оставить заявку</button>
             <div class="links">
                 <a href=""><img src="img/ic-vk.png" alt=""></a>
                 <a href=""><img src="img/ic-tg.png" alt=""></a>
@@ -165,7 +165,34 @@
     </footer>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal" id="Modal">
+    <span class="close" id="close">&times;</span>
+    <div class="modal-h">
+        <h1>Хочешь поработать с нами?</h1>
+        <p>Напиши свой номер и мы перезвоним!</p>
+    </div> 
+    <div class="data">
+        <input type="text" placeholder="Имя">
+        <input type="text" placeholder="Телефон">
+    </div>
+    <button class="send-app-btn" >Оставить заявку</button>
+</div>
+
+
 </body>
-<script src="scripts.js"></script>
+<script src="./script.js"></script>
+
 </html>
 
