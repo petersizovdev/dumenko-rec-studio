@@ -191,13 +191,13 @@ nav .nav-point{
 }
 
 .service{
-    margin-top: 40rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 #serviceh1{
-    margin: 3rem 0 0 15rem;
+    margin: 40rem 0 0 0;
     color: #EE3F32;
     font-family: "CraftworkGrotesk-Semibold";
     font-style: normal;
@@ -309,17 +309,6 @@ margin-left: auto;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .team{
     margin-top: 15%;
 }
@@ -417,59 +406,15 @@ h1{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
-    margin-left: 10%;
-    margin-top: 15%;
     display: flex;
-    flex-direction: row;
-    position: relative;
+    justify-content: space-between;
+    margin: 8rem 0;
 }
 
-.contacts{
+.contact{
     display: flex;
     flex-direction: column;
-}
-
-.contacts h1 {
-    font-size: 32px;
-    margin-left: 0px;
-    margin-bottom: 150px;
-    margin-top: 0px;
-}
-
-.contacts p {
-    font-family: "CraftworkGrotesk-Medium";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.contacts button {
-    margin: 120px 0 120px 0;
-    width: 120%
-
-}
-
-.links {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-top: -20%;
+
 }
-*/
