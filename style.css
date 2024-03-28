@@ -50,7 +50,7 @@ table {
   @font-face {
     font-family: "CraftworkGrotesk-Medium";
     font-style: normal;
-    font-weight: 500;
+    font-weight: medium;
     src: url("fonts/CraftworkGrotesk-Medium.ttf");
   }
   @font-face {
@@ -204,34 +204,98 @@ h1{
 .service-products{
     display: flex;
     gap: 2rem;
+    margin-top: 2rem;
+}
+.product{
+    position: relative;
+    text-align: center;
+    width: fit-content;
 }
 .product img{
-    position: relative; 
-    max-height: 50rem;
+    width:100%;
+}
+
+.product-title{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.product-price{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: medium;
+}
+
+#one{
+    top: 1rem;
+    right: 1rem;
+}
+
+#two{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+#one1{
+    top: 1rem;
+    right: 4rem;
+}
+#two1{
+    position: absolute;
+    bottom: 1rem;
+    right: 4rem;
+}
+
+#three{
+    top: 1rem;
+    left: 4rem;
+}
+
+#four{
+    position: absolute;
+    bottom: 1rem;
+    left: 4rem;
 }
 
 
-#instrumental{
-
+#five{
+    top: 1rem;
+    left: 1rem;
 }
-#vocal{
 
+#six{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
 }
+
+
 
 .phone-number-block {
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
+    gap: 2rem;
 }
 
 .phone-number-block input {
     background-color: rgba(192, 192, 192, .1);
     border: 1px solid white;
     border-radius: 2rem;
+    width: 100%;
+    color: aliceblue;
+    font-size: 1rem;
+    padding-left: 20px;
+    font-weight: medium;
+
 }
 
 .phone-number-block button{
     background-color: rgba(83, 84, 86, .5);
     backdrop-filter: blur(2px);
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 
