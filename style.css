@@ -78,7 +78,7 @@ html{
 }
 body{
     background-color: #121212;
-    
+
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -379,8 +379,12 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
+    margin-right: 8rem;
+}
+.links a img {
+    width: 52px;
 }
 .map{
     width: 100%;
@@ -406,25 +410,55 @@ iframe{
     #waves{
         margin-top: 0rem;
     }
+    .about-block p {
+        display: none;
+    }
+    .service-products{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        flex-direction: column-reverse;
+    }
+    .slider::before,
+.slider::after {
+  background: none;
+
+}
+.main-logo-content{
+    margin-top: 10rem; 
+}
+.send-app-btn{
+    padding: 0.5rem 1rem;
+}
+.contact{
+    gap: 2rem;
+}
+.links a img{
+    width: 52px
+}
 }
 @media (max-width: 375px)  {
     html{
         font-size: 14px ;
+    }
+    .slider{
+        scale: 0.8;
+        margin: 0 -8rem ;
     }
 }
 @media (max-width: 320px)  {
     html{
         font-size: 12px ;
     }
-}
-@media (max-width: 768px)  {
-    .main-logo-content{
-        margin-top: 10rem; 
-    }
-    .send-app-btn{
-        padding: 0.5rem 1rem;
+    .slider{
+        scale: 0.6;
+        margin: 0 -11rem ;
     }
 }
+
+
 @media (max-width: 600px)  {
     .main-logo-content{
         flex-direction: column;
@@ -436,24 +470,5 @@ iframe{
     }
     .send-app-btn{
         margin-top: 1rem;
-    }
-}
-
-@media (max-width: 768px)  {
-    .about-block p {
-        display: none;
-    }
-}
-@media (max-width: 768px)  {
-    .service-products{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (max-width: 768px)  {
-    footer{
-        flex-direction: column-reverse;
     }
 }
