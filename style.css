@@ -196,7 +196,7 @@ nav .nav-point{
     flex-direction: column;
     width: 100%;
 }
-h1{
+#serviceh1{
     margin: 3rem 0 0 15rem;
     color: #EE3F32;
     font-family: "CraftworkGrotesk-Semibold";
@@ -315,128 +315,77 @@ margin-left: auto;
 
 
 
-/* 
 
-.services{
-    margin-top: 35%;
-    position: relative;
-}
+
+
+
+
+
+
 
 h1{
-    margin-left: 12%;
+    margin: 3rem 0;
     color: #EE3F32;
     font-family: "CraftworkGrotesk-Semibold";
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 3rem;
 }
 
-.service-products{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    position: relative;
-    margin-top: 8%;
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, rgb(15, 15, 15) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 500px;
+  position: absolute;
+  width: 500px;
+  z-index: 2;
 }
 
-.service-product-line{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    height: 600px;
-    position: relative;
-    margin-bottom: 40px;
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
-.service-product{
-    width: 50%;
-    position: relative;
-    
+.slider::before {
+  left: 0;
+  top: 0;
 }
 
-.service-product-description-title{
-    font-family: "CraftworkGrotesk-Bold";
-    font-size: 20px;
+.slider {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 1440px;
 }
 
-.service-product-description-price{
-    font-family: "CraftworkGrotesk-Medium";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-      position: absolute; 
-    top: 0; 
-    left: 0; 
-    z-index: 1;
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
 }
 
-.service-product-description-price big{
-    font-family: "CraftworkGrotesk-Medium";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
+.slider .slide {
+  height: 500px;
+  width: 500px;
 }
 
-.service-product img{
-    position: absolute;
-    z-index: 1;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
 
-.flex-align-end{
-    align-items: flex-end;
-}
 
-.flex-align-start{
-    align-items: flex-start;
-}
 
-.margin-right-5{
-    margin-right: 7%;
-}
 
-.margin-right-10{
-    margin-right: 10%;
-}
-
-.margin-left-5{
-    margin-left: 7%;
-}
-
-.margin-left-10{
-    margin-left: 10%;
-}
-
-.service-product-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 600px;
-}
-.service-product-description p {
-    position: relative;
-    z-index: 3;
-}
-
-.phone-number-block {
-    display: flex;
-    margin: 2% 120px 10% 120px;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.phone-number-block input {
-    background-color: rgba(192, 192, 192, .1);
-    width: 800px;
-    border: 1px solid white;
-    border-radius: 30px;
-    padding-left: 38px; 
-}
-
-.phone-number-block button{
-    width: 500px;
-    background-color: rgba(192, 192, 192, .2);
-}
-
+/* 
 .team-images{
     margin: 0 80px 0 80px;
     margin-top: 8%;
