@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const openModalBtn = document.getElementById("open1");
     const closeModalBtn = document.getElementById("close");

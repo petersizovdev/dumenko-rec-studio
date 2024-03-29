@@ -10,8 +10,7 @@
 
 <body>
 
-    <div class="wrapper">
-
+<div class="wrapper">
 <header>
         <div class="main-logo">
             <img id="logo" src="img/main-logo.png" alt="Логотип">
@@ -22,14 +21,12 @@
             <a class="nav-point" href="#about">О нас</a>
             <a class="nav-point" href="#contact">Контакты</a>
         </nav>
-
 </header>
 
 <div class="main-logo-content">
     <img id="main-label" src="svg/main-label.svg" alt="Название">
     <button class="send-app-btn" id="open2">Оставить заявку</button>
 </div>
-
 <img id="waves" src="./svg/waves.svg" alt="">
 </div>
  
@@ -37,7 +34,6 @@
 
 <div class="wrapper">
 <h1 id="serviceh1">Стоимость услуг</h1>
-
 </div>
 <section class="service">
     <div class="service-products">
@@ -53,7 +49,6 @@
             <p class="product-price" id="two1">от 5 000 р.</p>
         </div>
     </div>
-
     <div class="service-products" id="second-line">
         <div class="product">
             <img src="img/img3.png" alt="">
@@ -66,7 +61,6 @@
             <p class="product-price" id="six">от 5 000 р.</p>
         </div>
     </div>
-
     <div class="service-products">
         <div class="product">
             <img src="img/img5.png" alt="">
@@ -79,18 +73,15 @@
             <p class="product-price" id="two1">от 5 000 р.</p>
         </div>
     </div>
-
-
     </form>
-        <form class="phone-number-block" action="https://formspree.io/f/mgegnyea" method="POST">
+        <form class="phone-number-block" action="https://formspree.io/f/положисюдаайдишник" method="POST">
             <input name="Телефон" type="text" placeholder="Напиши свой номер и мы перезвоним!" required>
             <button type="submit" class="send-app-btn">Оставить заявку</button>
         </form>
-    
     </div>
 </section>
-<div class="wrapper">
 
+<div class="wrapper">
 <section class="team" id="team">
     <h1>Команда</h1>
     <div class="slider">
@@ -143,7 +134,7 @@
             <p>Мы — студия полного <br> музыкального продакшена.<br> Реализуем любую задачу<br> от записи песни до съемки клипа.<br><br>Поработай на уникальном <br>оборудовании с видом<br> на весь город.<br><br>Будь ты вокалистом,<br> рэпером или продюсером,<br> мы предоставим всё<br> необходимое, чтобы <br>воплотить твои идеи в<br> жизнь.</p>
         </div>
 
-        <button class="send-app-btn" id="open1">Оставить заявку</button>
+        <button class="send-app-btn" id="open">Оставить заявку</button>
 
     </section>
 
@@ -155,7 +146,7 @@
             <h1>Контакты</h1>
             <p>Санкт-Петербург <br> м.Беговая</p>
             <p>+7 (888) 000-00- 00</p>
-            <button class="send-app-btn" id="open">Оставить заявку</button>
+            <button class="send-app-btn" id="open1">Оставить заявку</button>
             <div class="links">
                 <a href=""><img src="img/ic-vk.png" alt=""></a>
                 <a href=""><img src="img/ic-tg.png" alt=""></a>
@@ -180,26 +171,21 @@
         <p>Напиши свой номер и мы перезвоним!</p>
     </div> 
 
-        <form class="data" action="https://formspree.io/f/mgegnyea" method="POST">
-            <input name="Имя" type="text" placeholder="Имя" required>
-            <input name="Телефон" placeholder="Телефон" required>
+    <form class="data" action="https://formspree.io/f/положисюдаайдишник" method="POST">
+        <input name="Имя" type="text" placeholder="Имя" required>
+        <input name="Телефон" placeholder="Телефон" required>
         <button type="submit" class="send-app-btn" >Оставить заявку</button>
-        </form>
+    </form>
     
 </div>
-
 
 </body>
 <script src="./script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-   
 <script>
     gsap.from("#main-label", { duration: 2, x: -200, opacity: 0, ease: "power2.out" });
     gsap.from("#waves", { duration: 2, y: 200, opacity: 0, ease: "power2.out", delay: 1 });
     
     gsap.from("#open2", { duration: 1, opacity: 0, ease: "power2.out", delay: 2.5 });
 </script>
-
-
 </html>
-
